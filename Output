@@ -1,0 +1,21 @@
+📊 Stock Portfolio Tracker
+Available Stocks: AAPL, TSLA, GOOG, MSFT
+Enter stock name (or 'done' to finish): AAPL
+Enter quantity: 50
+Enter stock name (or 'done' to finish): TSLA
+Enter quantity: 60
+Enter stock name (or 'done' to finish): GOOG
+Enter quantity: 140
+Enter stock name (or 'done' to finish): MSFT
+Enter quantity: 340
+Enter stock name (or 'done' to finish): AAPL 
+❌ Stock not available.
+Enter stock name (or 'done' to finish): TSLA 
+❌ Stock not available.
+Enter stock name (or 'done' to finish): GOOG 
+❌ Stock not available.
+Enter stock name (or 'done' to finish): MSFT 
+❌ Stock not available.
+Enter stock name (or 'done' to finish): AAPL 
+❌ Stock not available.
+
