@@ -1,0 +1,39 @@
+stock_prices = {
+    "AAPL": 180,
+    "TSLA": 250,
+    "GOOG": 140,
+    "MSFT": 310
+}
+
+total_investment = 0
+portfolio = {}
+
+print("📊 Stock Portfolio Tracker")
+print("Available Stocks:", ", ".join(stock_prices.keys()))
+
+while True:
+    stock = input("Enter stock name (or 'done' to finish): ").upper()
+    if stock == "DONE":
+        break
+
+    if stock not in stock_prices:
+        print("❌ Stock not available.")
+        continue
+
+    quantity = int(input("Enter quantity: "))
+    cost = stock_prices[stock] * quantity
+
+    portfolio[stock] = cost
+    total_investment += cost
+
+print("\n📈 Portfolio Summary")
+for stock, value in portfolio.items():
+    print(f"{stock}: ₹{value}")
+
+print("💰 Total Investment: ₹", total_investment)
+
+# Save to file
+with open("portfolio.txt", "w") as file:
+    for stock, value in portfolio.items():
+        file.write(f"{stock}: {value}\n")
+    file.write(f"Total Investment: {total_investment}")
